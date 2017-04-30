@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/codebase";
+/******/ 	__webpack_require__.p = "./";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 1);
@@ -89,16 +89,48 @@ const prices = {
     three: 2,
     week: 1
 };
-
+// const rates = {
+//     fast: {
+//         price: 3,
+//         term: "В течении дня"
+//     },
+//     standart: {
+//         price: 2,
+//         term: "От 3 до 4 дней"
+//     },
+//     econom: {
+//         price: 1,
+//         term: "Неделя"
+//     }
+// };
+const rates = {
+    day: {
+        price: 3,
+        term: "В течении дня"
+    },
+    three: {
+        price: 2,
+        term: "От 3 до 4 дней"
+    },
+    week: {
+        price: 1,
+        term: "Неделя"
+    }
+};
+function showPrice(id) {
+    let price = rates[id].price;
+    priceCont.innerHTML = `${price} BYN`;
+    term.innerHTML = rates[id].term;
+}
+const term = document.querySelector("#term");
 const priceCont = document.querySelector("#price");
 for (let i = 0; i < inputs.length; i++) {
     inputs[i].addEventListener("change", e => {
-        console.log(e.target);
         let id = e.target.id;
-        let price = prices[id];
-        priceCont.innerHTML = `${price} rub`;
+        showPrice(id);
     });
 }
+showPrice("three");
 
 // accroditon
 
@@ -108,26 +140,51 @@ class Accord {
         this.items = this.container.querySelectorAll(".accordion_item");
         this._init();
     }
+    check(item, index) {
+        this._hideOther(index);
+        item.classList.toggle("open");
+    }
     _init() {
         for (let i = 0; i < this.items.length; i++) {
             this.items[i].addEventListener("click", e => {
-                this._hideOther(i);
-                const item = this.items[i];
-                const content = item.querySelector(".item_content");
-                content.classList.toggle("open");
+                this.check(this.items[i], i);
             });
         }
     }
-    _hideOther(id) {
+    _hideOther(index) {
         for (let i = 0; i < this.items.length; i++) {
-            if (id === i) continue;
+            if (index === i) continue;
             const item = this.items[i];
-            const content = item.querySelector(".item_content");
-            content.classList.toggle("open", false);
+            item.classList.toggle("open", false);
+            // const content = item.querySelector(".item_content");
+            // content.classList.toggle("open", false);
         }
     }
 }
-new Accord();
+const accord = new Accord();
+// accord.check(document.querySelectorAll(".accordion_item")[0],0)
+
+
+/// header 
+function getPosition(element) {
+    var rect = element.getBoundingClientRect();
+    // console.log(rect.top, rect.right, rect.bottom, rect.left);
+    return { top: rect.top, right: rect.right, bottom: rect.bottom, left: rect.left };
+}
+const header = document.querySelector("#main_menu");
+header.addEventListener("click", e => {
+    console.log(e);
+});
+
+window.addEventListener("hashchange", e => {
+    // console.log(document.location.hash);
+    e.preventDefault();
+    let hash = document.location.hash.replace("#", "");
+    console.log(hash);
+    const pos = getPosition(document.querySelector(`.${hash}`));
+    console.log(pos.top);
+    window.scrollTo(0, pos.top);
+});
 
 /***/ })
 /******/ ]);
