@@ -157,8 +157,36 @@
     <script type="text/javascript">
         window.onload = function () {
             VK.init({ apiId: 6012444 });
-            VK.Widgets.Auth('vk_auth', {authUrl:"https://re-software.github.io/"});
+            VK.Widgets.Auth('vk_auth', {
+                onAuth: function (data) {
+                    console.log("authorized", data)
+                }
+            });
         }
+        function sendReq() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://api.vk.com/method/messages.send?&access_token=2a55715d507ac274a4818ce6f106b1da988e21d4cdcc26490203d65bc4181a7b9fea62c157bd9dc92f6d5&user_id=55634476&message=%22test%22&v=5.52', true);
+
+            xhr.send();
+
+            xhr.onreadystatechange = function () {
+                if (this.readyState != 4) return;
+
+                // по окончании запроса доступны:
+                // status, statusText
+                // responseText, responseXML (при content-type: text/xml)
+
+                if (this.status != 200) {
+                    // обработать ошибку
+                    alert('ошибка: ' + (this.status ? this.statusText : 'запрос не удался'));
+                    return;
+                } else {
+                    console.log(this.responseText)
+                }
+                // получить результат из this.responseText или this.responseXML
+            }
+        }
+        sendReq();
     </script>
 
 </body>
