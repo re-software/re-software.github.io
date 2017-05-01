@@ -17,6 +17,8 @@
     <meta property="og:image" content="codebase/img/code.jpg" />
 </head>
 
+
+
 <body>
     <header>
         <div class="logo">
@@ -66,7 +68,8 @@
                         <img src="codebase/img/clock.svg" alt="">
                     </div>
                     <h3>Быстро сделаем</h3>
-                   Изготовим вашу работу в кратчайшие сроки. Есть возможность экспресс заказа - ваша работа будет готова уже через несколько часов.
+                    Изготовим вашу работу в кратчайшие сроки. Есть возможность экспресс заказа - ваша работа будет готова уже через несколько
+                    часов.
 
                 </div>
                 <div class="about_block col-12 col-lg-4">
@@ -91,20 +94,20 @@
             <div class="wrap row">
                 <div class="time">
                     <h3>Тарифы</h3>
- 
-                        <input type="radio" name="time" id="day" id="day">
-                        <label class="time_picker" for="day">Экспесс</label>
 
-                        <input type="radio" name="time" id="three">
-                        <label class="time_picker" for="three">Стандарт</label>
+                    <input type="radio" name="time" id="day" id="day">
+                    <label class="time_picker" for="day">Экспесс</label>
 
-                        <input type="radio" name="time" id="week">
-                        <label class="time_picker" for="week">Эконом</label>
-     
+                    <input type="radio" name="time" id="three">
+                    <label class="time_picker" for="three">Стандарт</label>
+
+                    <input type="radio" name="time" id="week">
+                    <label class="time_picker" for="week">Эконом</label>
+
                 </div>
                 <div class="terms" id="terms">
-                     <h3>Срок выполнения</h3>
-                     <div id="term" class="term"></div>
+                    <h3>Срок выполнения</h3>
+                    <div id="term" class="term"></div>
                 </div>
                 <div class="price">
                     <h3 class="header">Ваша цена</h3>
@@ -139,6 +142,9 @@
                 </div>
             </div>
         </section>
+        <!-- VK Widget -->
+        <div id="vk_auth"></div>
+
     </div>
 
     <!--END MAIN CONTENT-->
@@ -146,7 +152,14 @@
 
     </footer>
     <!--SCRIPTS-->
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?145"></script>
     <script src="codebase/bundle.js"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            VK.init({ apiId: 6012444 });
+            VK.Widgets.Auth('vk_auth', {});
+        }
+    </script>
 
 </body>
 
