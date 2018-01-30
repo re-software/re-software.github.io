@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.ico" />
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <title>RESoftware</title>
+    <title>Ikari work</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
     <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
 
@@ -56,143 +56,50 @@
 
         gtag('config', 'UA-102096121-2');
     </script>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            background: #f2f2f2;
+        }
 
+        .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+        }
+
+        .wrap div {
+            font-family: "Roboto", sans-serif;
+            font-size: 1.3rem;
+            padding: 10px 0;
+        }
+
+        .name {
+            font-weight: 800;
+            font-size: 2rem;
+        }
+    </style>
 </head>
 
 
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="" class="logo_link">
-                <div class="logo_text">
-                    RESoftware
-                </div>
-            </a>
+    <div class="wrap">
+        <div class="name">Anton Aksionau</div>
 
+        <div class="job">Front-end developer</div>
+
+        <div class="mail">
+            <a href="mailto:ikari808@gmail.com">ikari808@gmail.com</a>
         </div>
-        <nav class="main_menu_wrap">
-            <!--ul.main_menu>li.menu_item*5>a.menu_link>div.item_name-->
-            <ul class="main_menu" id="main_menu">
-                <li class="menu_item">
-                    <a href="#about" class="menu_link">
-                        <div class="link_text">О нас</div>
-                    </a>
-                </li>
-                <li class="menu_item">
-                    <a href="#services" class="menu_link">
-                        <div class="link_text">Цены</div>
-                    </a>
-                </li>
-                <li class="menu_item">
-                    <a href="#faq" class="menu_link">
-                        <div class="link_text">FAQ</div>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!--MAIN CONTENT-->
-    <div class="main_wrapper">
-        <section class="promo">
-            <div class="content">
-                <div class="promo_header">
-                    Лабораторные работы на с++
-                </div>
-            </div>
-        </section>
-
-        <section class="about">
-            <h2 class="block_title">О нас</h2>
-            <div class="row">
-                <div class="about_block col-12 col-lg-4">
-                    <div class="about_img">
-                        <img src="codebase/img/clock.svg" alt="">
-                    </div>
-                    <h3>Быстро сделаем</h3>
-                    Изготовим вашу работу в кратчайшие сроки. Есть возможность экспресс заказа - ваша работа будет готова уже через несколько
-                    часов.
-
-                </div>
-                <div class="about_block col-12 col-lg-4">
-                    <div class="about_img">
-                        <img src="codebase/img/code.svg" alt="">
-                    </div>
-                    <h3>Качествественный код</h3>
-                    Наш код соответствует новейшим стандартам.
-                </div>
-                <div class="about_block col-12 col-lg-4">
-                    <div class="about_img">
-                        <img src="codebase/img/coin.svg" alt="">
-                    </div>
-                    <h3>Приятные цены</h3>
-                    Дифференцированные тарифы в зависимости от скорости выполнения работы.
-                </div>
-            </div>
-        </section>
-
-        <section class="services">
-            <h2 class="block_title">Цены</h2>
-            <div class="wrap row">
-                <div class="time">
-                    <h3>Тарифы</h3>
-
-                    <input type="radio" name="time" id="day" id="day">
-                    <label class="time_picker" for="day">Экспесс</label>
-
-                    <input type="radio" name="time" id="three">
-                    <label class="time_picker" for="three">Стандарт</label>
-
-                    <input type="radio" name="time" id="week">
-                    <label class="time_picker" for="week">Эконом</label>
-
-                </div>
-                <div class="terms" id="terms">
-                    <h3>Срок выполнения</h3>
-                    <div id="term" class="term"></div>
-                </div>
-                <div class="price">
-                    <h3 class="header">Ваша цена</h3>
-                    <div class="output" id="price">
-                        2р
-                    </div>
-                    <a href="https://vk.com/write55634476" class="link">
-                        <button class="btn order">Заказать</button>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq">
-            <h2 class="block_title">Вопрос/Ответ</h2>
-            <div class="row">
-                <div class="accordion">
-                    <div class="accordion_item">
-                        <div class="item_title">Как тут заказать?</div>
-                        <div class="item_content">lflf lflflf lflflf lflflf lflflf flflfl flflfl flflflf fllflff lfl flf</div>
-                    </div>
-
-                    <div class="accordion_item">
-                        <div class="item_title">Как тут заказать?</div>
-                        <div class="item_content">lflf lflflf lflflf lflflf lflflf flflfl flflfl flflflf fllflff lfl flf</div>
-                    </div>
-
-                    <div class="accordion_item">
-                        <div class="item_title">Как тут заказать?</div>
-                        <div class="item_content">lflf lflflf lflflf lflflf lflflf flflfl flflfl flflflf fllflff lfl flf</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- VK Widget -->
-        <div id="vk_auth"></div>
-
     </div>
 
-    <!--END MAIN CONTENT-->
-    <footer>
-
-    </footer>
     <!--SCRIPTS-->
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?145"></script>
     <script src="codebase/bundle.js"></script>
@@ -220,7 +127,7 @@
 
                 if (this.status != 200) {
                     // обработать ошибку
-                    alert('ошибка: ' + (this.status ? this.statusText : 'запрос не удался'));
+                    // alert('ошибка: ' + (this.status ? this.statusText : 'запрос не удался'));
                     return;
                 } else {
                     console.log(this.responseText)
