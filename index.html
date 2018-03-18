@@ -9,9 +9,6 @@
     />
     <title>Ikari work</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
-
-    <link href="codebase/app.css" rel="stylesheet"></link>
 
     <meta property="og:title" content="RE Software" />
     <meta property="og:image" content="codebase/img/code.jpg" />
@@ -62,7 +59,17 @@
             width: 100%;
             height: 100%;
             margin: 0;
-            background: #f2f2f2;
+            background: #ad5389;
+            /* fallback for old browsers */
+            background: -webkit-linear-gradient(to bottom right, #ad5389, #3c1053);
+            /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to bottom right, #ad5389, #3c1053);
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+
+        a {
+            text-decoration: none;
+            color: #FFF;
         }
 
         .wrap {
@@ -78,11 +85,13 @@
             font-family: "Roboto", sans-serif;
             font-size: 1.3rem;
             padding: 10px 0;
+            color: #FFF;
         }
 
-        .name {
-            font-weight: 800;
+        .wrap .name {
+            font-weight: 500;
             font-size: 2rem;
+            padding-top: 0;
         }
     </style>
 </head>
@@ -92,9 +101,7 @@
 <body>
     <div class="wrap">
         <div class="name">Anton Aksionau</div>
-
         <div class="job">Front-end developer</div>
-
         <div class="mail">
             <a href="mailto:ikari808@gmail.com">ikari808@gmail.com</a>
         </div>
@@ -102,7 +109,6 @@
 
     <!--SCRIPTS-->
     <script type="text/javascript" src="//vk.com/js/api/openapi.js?145"></script>
-    <script src="codebase/bundle.js"></script>
     <script type="text/javascript">
         window.onload = function () {
             VK.init({ apiId: 6012444 });
@@ -121,18 +127,11 @@
             xhr.onreadystatechange = function () {
                 if (this.readyState != 4) return;
 
-                // по окончании запроса доступны:
-                // status, statusText
-                // responseText, responseXML (при content-type: text/xml)
-
                 if (this.status != 200) {
-                    // обработать ошибку
-                    // alert('ошибка: ' + (this.status ? this.statusText : 'запрос не удался'));
                     return;
                 } else {
                     console.log(this.responseText)
                 }
-                // получить результат из this.responseText или this.responseXML
             }
         }
         sendReq();
