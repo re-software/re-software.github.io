@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Jump Game</title>
+	<link rel="stylesheet" href="styles/re_buttons.css">
+	<link rel="stylesheet" href="styles/main.css">
+	<script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+	<script>
+		// Initialize Firebase
+		var config = {
+		  apiKey: "AIzaSyDWe1P3LPO_NjWejYoiA9mNFIcCAANs7qk",
+		  authDomain: "jumpgame-5f857.firebaseapp.com",
+		  databaseURL: "https://jumpgame-5f857.firebaseio.com",
+		  projectId: "jumpgame-5f857",
+		  storageBucket: "",
+		  messagingSenderId: "620960838370"
+		};
+		firebase.initializeApp(config);
+		var db = firebase.firestore();
+	  </script>
+	<script src="src/index.js"></script>
+</head>
+
+<body>
+	<div id="cont" class="main_cont">
+		<div id="point" class="point"></div>
+		<div id="plates"></div>
+	</div>
+
+	<script>
+		window.onload = () => {
+			const doodle = new Doodle();
+		}
+	</script>
+</body>
+
+</html>

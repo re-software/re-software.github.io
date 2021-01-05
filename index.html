@@ -1,142 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="theme-color" content="#000000">
-    <link rel="icon" href="favicon.ico" />
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
-    <title>Ikari work</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-
-    <meta property="og:title" content="RE Software" />
-    <meta property="og:image" content="codebase/img/code.jpg" />
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function (d, w, c) {
-            (w[c] = w[c] || []).push(function () {
-                try {
-                    w.yaCounter47008626 = new Ya.Metrika({
-                        id: 47008626,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true
-                    });
-                } catch (e) { }
-            });
-
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
-
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else { f(); }
-        })(document, window, "yandex_metrika_callbacks");
-    </script>
-    <noscript>
-        <div>
-            <img src="https://mc.yandex.ru/watch/47008626" style="position:absolute; left:-9999px;" alt="" />
-        </div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102096121-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-102096121-2');
-    </script>
-    <style>
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            background: #ad5389;
-            /* fallback for old browsers */
-            background: -webkit-linear-gradient(to bottom right, #ad5389, #3c1053);
-            /* Chrome 10-25, Safari 5.1-6 */
-            background: linear-gradient(to bottom right, #ad5389, #3c1053);
-            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        }
-
-        a {
-            text-decoration: none;
-            color: #FFF;
-        }
-
-        .wrap {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            width: 100%;
-            height: 100%;
-        }
-
-        .wrap div {
-            font-family: "Roboto", sans-serif;
-            font-size: 1.3rem;
-            padding: 10px 0;
-            color: #FFF;
-        }
-
-        .wrap .name {
-            font-weight: 500;
-            font-size: 2rem;
-            padding-top: 0;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Red Eye</title>
 </head>
-
-
-
 <body>
-    <div class="wrap">
-        <div class="name">Anton Aksionau</div>
-        <div class="job">Front-end developer</div>
-        <div class="mail">
-            <a href="mailto:ikari808@gmail.com">ikari808@gmail.com</a>
-        </div>
-    </div>
-
-    <!--SCRIPTS-->
-    <script type="text/javascript" src="//vk.com/js/api/openapi.js?145"></script>
-    <script type="text/javascript">
-        window.onload = function () {
-            VK.init({ apiId: 6012444 });
-            VK.Widgets.Auth('vk_auth', {
-                onAuth: function (data) {
-                    console.log("authorized", data)
-                }
-            });
-        }
-        function sendReq() {
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', 'https://api.vk.com/method/messages.send?&access_token=2a55715d507ac274a4818ce6f106b1da988e21d4cdcc26490203d65bc4181a7b9fea62c157bd9dc92f6d5&user_id=55634476&message=%22test%22&v=5.52', true);
-
-            xhr.send();
-
-            xhr.onreadystatechange = function () {
-                if (this.readyState != 4) return;
-
-                if (this.status != 200) {
-                    return;
-                } else {
-                    console.log(this.responseText)
-                }
-            }
-        }
-        sendReq();
-    </script>
-
+    <div id="app"></div>
 </body>
-
+<script src="./dist/build.js?v=2017-03-17"></script>
 </html>
