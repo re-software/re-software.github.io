@@ -1,0 +1,9 @@
+{
+  "imports": {
+    "svelte": "./svelte.js",
+    "svelte-i18n": "./svelte-i18n.js",
+    "svelte-routing": "./svelte-routing.js",
+    "svelte/internal": "./svelte/internal.js",
+    "svelte/store": "./svelte/store.js"
+  }
+}

@@ -1,0 +1,665 @@
+{
+    "Зеленый": {
+        "name": "Зеленый",
+        "teaList": [
+            {
+                "name": "Чжень Май",
+                "time": "",
+                "temperature": "80",
+                "glass": "Стекло",
+                "rating": "5",
+                "description": "",
+                "price": "",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Лунцзин #1 2019",
+                "time": "",
+                "temperature": "80",
+                "glass": "Стекло",
+                "rating": "5",
+                "description": "Вкус и аромат тыквенных семечек. Слегка маслянистый, без горечи. ",
+                "price": "7",
+                "tags": "",
+                "inStock": "TRUE"
+            }
+        ],
+        "totalAmount": 2,
+        "inStockAmount": 2,
+        "outOfStockAmount": 0
+    },
+    "Красный": {
+        "name": "Красный",
+        "teaList": [
+            {
+                "name": "Лапсанг Сушонг",
+                "time": "30",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "3",
+                "description": "Дымный, ароматизатор вымывается через 2-3 пролива",
+                "price": "",
+                "tags": "Вечерний",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Маофэн дян хун",
+                "time": "30",
+                "temperature": "95",
+                "glass": "",
+                "rating": "",
+                "description": "",
+                "price": "",
+                "tags": "",
+                "inStock": "FALSE"
+            }
+        ],
+        "totalAmount": 2,
+        "inStockAmount": 1,
+        "outOfStockAmount": 1
+    },
+    "Белый": {
+        "name": "Белый",
+        "teaList": [
+            {
+                "name": "Шоу Мэй",
+                "time": "20-30",
+                "temperature": "80-90",
+                "glass": "Стекло",
+                "rating": "",
+                "description": "",
+                "price": "",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Дун Дин",
+                "time": "",
+                "temperature": "",
+                "glass": "Стекло",
+                "rating": "",
+                "description": "",
+                "price": "",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Фудин Лао Бай Ча",
+                "time": "30",
+                "temperature": "80-90",
+                "glass": "Стекло",
+                "rating": "5",
+                "description": "Похож на шоу мэй. Осенний вкус, в котором присутствует некоторая волосатость. На 4-5 проливе появляется кислинка. Цвет держит хорошо. Аромат тоже",
+                "price": "12",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Бай Хао Инь Чжэнь",
+                "time": "30",
+                "temperature": "90",
+                "glass": "Стекло",
+                "rating": "5",
+                "description": "Сладкий вкус, с яблочной ноткой. ",
+                "price": "12",
+                "tags": "",
+                "inStock": "TRUE"
+            }
+        ],
+        "totalAmount": 4,
+        "inStockAmount": 4,
+        "outOfStockAmount": 0
+    },
+    "Японский": {
+        "name": "Японский",
+        "teaList": [
+            {
+                "name": "Кокейча",
+                "time": "5",
+                "temperature": "80",
+                "glass": "Стекло",
+                "rating": "5",
+                "description": "Глубокий, маслянистый вкус. Во вкусе присутствуют водоросли и семечки",
+                "price": "10",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Сенча",
+                "time": "10-15",
+                "temperature": "70-80",
+                "glass": "Стекло",
+                "rating": "",
+                "description": "",
+                "price": "10",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Ходзича",
+                "time": "30",
+                "temperature": "80",
+                "glass": "Глина",
+                "rating": "",
+                "description": "",
+                "price": "10",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Кукича",
+                "time": "30",
+                "temperature": "80",
+                "glass": "Стекло",
+                "rating": "",
+                "description": "",
+                "price": "10",
+                "tags": "",
+                "inStock": "TRUE"
+            }
+        ],
+        "totalAmount": 4,
+        "inStockAmount": 4,
+        "outOfStockAmount": 0
+    },
+    "Шу": {
+        "name": "Шу",
+        "teaList": [
+            {
+                "name": "Жоу Ли(Мягкая сила) БаДу",
+                "time": "",
+                "temperature": "",
+                "glass": "",
+                "rating": "3",
+                "description": "Быстро пропадает вкус",
+                "price": "11",
+                "tags": "",
+                "inStock": "FALSE"
+            },
+            {
+                "name": "Лао Ча Тоу",
+                "time": "30-60",
+                "temperature": "",
+                "glass": "",
+                "rating": "5",
+                "description": "",
+                "price": "8",
+                "tags": "",
+                "inStock": "FALSE"
+            },
+            {
+                "name": "Синь Вэнь — Юн Чжень Гунтин",
+                "time": "30-60",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "Теряет вкус на 4-5 проливе. Однако, имеет приятный мощный вкус, с горчинкой. Идеально подходит для утра. ",
+                "price": "6",
+                "tags": "",
+                "inStock": "FALSE"
+            },
+            {
+                "name": "Дай Цзю Шу Ча (Teashop)",
+                "time": "30",
+                "temperature": "90-95",
+                "glass": "Глина",
+                "rating": "",
+                "description": "Нотки чернослива  во вкусе, при заваривании в глиняном чайнике. В аромате присутствует подвальность. На 5 проливе появляется кислинка, но остальные ноты затухают. Цвет остается насыщенным. ",
+                "price": "7",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Сягуань — Сяо Фа",
+                "time": "40",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "3",
+                "description": "Вкус блеклый, без горчинки. В аромате дерево, немного рыбности. Цвет рубиновый. Красивая картонная коробка, и удобный вес в 100г. запоминаются сильнее, чем сам чай. Внезапно, в типоте, ~6гр. дали вполне неплохой вкус. Для повседневного офисного пития самое то",
+                "price": "8",
+                "tags": "",
+                "inStock": "FALSE"
+            },
+            {
+                "name": "Мэнку — Му Е Чунь Гунтин",
+                "time": "30",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "Глубокий, сбалансированный вкус. Присутствует легкая горчинка, древесные ноты, кислинка. Настой темно-рубиновый. В запахе чувствуется древесина.  Держит 3 пролива(5г. на 180мл) потом резко теряет цвет и глубину вкуса, как впрочем и остальные гунтины. ",
+                "price": "8",
+                "tags": "",
+                "inStock": "FALSE"
+            },
+            {
+                "name": "БаДу Лао Ча Тоу",
+                "time": "40-60",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "Раскрывается к 2 проливу. Настой густой, темно коричневый. Вкус плотный, с горчинкой. В аромате дерево, темный шоколад. Очень стойкий, на 10 проливе сохраняет достаточный вкус и цвет",
+                "price": "13",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Буланьшань TeaShop",
+                "time": "30",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "",
+                "description": "В запахе сладость и землянистость. ",
+                "price": "5",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Рисовый шу",
+                "time": "30",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "",
+                "description": "Носки и грибы",
+                "price": "",
+                "tags": "Особый",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Мэнхай — Да И v93",
+                "time": "30",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "",
+                "description": "",
+                "price": "",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "-----Test Item-----",
+                "time": "50-150",
+                "temperature": "40-80",
+                "glass": "Глина, Фарфор, Стекло, Заварник, Термос",
+                "rating": "4",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris quis est finibus, malesuada enim quis, consectetur arcu. Quisque non pellentesque dolor. In vel pretium leo, at finibus libero. Sed auctor quam sit amet malesuada feugiat. Donec vulputate arcu turpis, finibus ornare ipsum condimentum sed.",
+                "price": "99",
+                "tags": "Вечерний, Утренний, Особый",
+                "inStock": "TRUE"
+            }
+        ],
+        "totalAmount": 11,
+        "inStockAmount": 6,
+        "outOfStockAmount": 5
+    },
+    "Шен": {
+        "name": "Шен",
+        "teaList": [
+            {
+                "name": "Мэнку Хао",
+                "time": "",
+                "temperature": "",
+                "glass": "",
+                "rating": "5",
+                "description": "",
+                "price": "12",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Сы Ю Гу Шу",
+                "time": "",
+                "temperature": "",
+                "glass": "",
+                "rating": "5",
+                "description": "",
+                "price": "9.5",
+                "tags": "",
+                "inStock": "FALSE"
+            },
+            {
+                "name": "Чэ Ши «И Гу Е Шэн Люй»",
+                "time": "10-15",
+                "temperature": "95",
+                "glass": "",
+                "rating": "5",
+                "description": "Глубокий, горький вкус. Довольно тяжелый, как утренний чай, возможно, не самый лучший вариант. ",
+                "price": "7",
+                "tags": "",
+                "inStock": "FALSE"
+            },
+            {
+                "name": "Рассыпной с диких деревьев 2006г. ",
+                "time": "10-15",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "Очень приятный, сладковато-ванильный аромат и вкус. Но, очень крепкое состояние. Заваривать не больше 3г на 100мл",
+                "price": "6",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Пу Вэнь — Бин Юнь Я 5568",
+                "time": "10",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "Легкий приятный вкус, чувствуется сладость, и небольшая горчинка. Состояние умеренное. Отличный шен на каждый день. ",
+                "price": "5.5",
+                "tags": "",
+                "inStock": "FALSE"
+            },
+            {
+                "name": "А Шэн",
+                "time": "10",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "",
+                "price": "12",
+                "tags": "Утренний",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Сягуань — Бао Янь Чжуань",
+                "time": "10",
+                "temperature": "95",
+                "glass": "Глина",
+                "rating": "",
+                "description": "Для тибета",
+                "price": "4.5",
+                "tags": "Утренний",
+                "inStock": "TRUE"
+            }
+        ],
+        "totalAmount": 7,
+        "inStockAmount": 4,
+        "outOfStockAmount": 3
+    },
+    "Улун": {
+        "name": "Улун",
+        "teaList": [
+            {
+                "name": "Алишань ГАБА",
+                "time": "20-30",
+                "temperature": "90-100",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "",
+                "price": "33",
+                "tags": "Особый",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Рисовый тайландский",
+                "time": "30",
+                "temperature": "90",
+                "glass": "Стекло",
+                "rating": "4",
+                "description": "Носки",
+                "price": "11",
+                "tags": "Особый",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Ассам Блэк Ролл ",
+                "time": "30",
+                "temperature": "90",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "Вкус похож на красный чай, с небольшими нотками жаренного улуна. В запахе больше чувствуется жаренный улун. Цвет красного чая. По итогу получается нтересный микс улуна и красного чая.  ",
+                "price": "7",
+                "tags": "Утренний",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Тан Бей Да Хун Пао",
+                "time": "30",
+                "temperature": "90",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "",
+                "price": "20",
+                "tags": "Особый",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Дун дин",
+                "time": "30",
+                "temperature": "90",
+                "glass": "Стекло",
+                "rating": "5",
+                "description": "",
+                "price": "",
+                "tags": "Утренний",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "",
+                "time": "",
+                "temperature": "",
+                "glass": "",
+                "rating": "",
+                "description": "",
+                "price": "",
+                "tags": "",
+                "inStock": "FALSE"
+            }
+        ],
+        "totalAmount": 6,
+        "inStockAmount": 5,
+        "outOfStockAmount": 1
+    },
+    "НеЧай": {
+        "name": "НеЧай",
+        "teaList": [
+            {
+                "name": "Саган Дайля",
+                "time": "180",
+                "temperature": "100",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "",
+                "price": "10",
+                "tags": "Особый",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Хризантема",
+                "time": "180",
+                "temperature": "100",
+                "glass": "Стекло",
+                "rating": "",
+                "description": "",
+                "price": "13",
+                "tags": "Вечерний",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Кудин",
+                "time": "60",
+                "temperature": "80",
+                "glass": "Стекло",
+                "rating": "5",
+                "description": "Более прохладная вода и малое время настаивания дают приятный сладкий настой. Горячая вода делает настой резко горьким, но, с неожиданным сладким послевкусием. ",
+                "price": "9",
+                "tags": "Вечерний",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Анчан",
+                "time": "180",
+                "temperature": "100",
+                "glass": "Стекло",
+                "rating": "4",
+                "description": "",
+                "price": "10",
+                "tags": "Особый",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Ку Цяо Май(гречишный)",
+                "time": "180",
+                "temperature": "100",
+                "glass": "Стекло",
+                "rating": "5",
+                "description": "Сладкий, с ароматом печенья",
+                "price": "6",
+                "tags": "Вечерний",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Гинкго Билоба",
+                "time": "180",
+                "temperature": "",
+                "glass": "Термос",
+                "rating": "5",
+                "description": "",
+                "price": "9",
+                "tags": "Особый",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Фруктово-ягодный",
+                "time": "180",
+                "temperature": "",
+                "glass": "",
+                "rating": "3",
+                "description": "",
+                "price": "4.5",
+                "tags": "Вечерний",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Стальной характер",
+                "time": "180",
+                "temperature": "",
+                "glass": "",
+                "rating": "5",
+                "description": "",
+                "price": "",
+                "tags": "Вечерний",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Сибирский Иван-чай",
+                "time": "30",
+                "temperature": "",
+                "glass": "Стекло",
+                "rating": "4",
+                "description": "Кисловат, лучше заваривать проливами",
+                "price": "",
+                "tags": "Вечерний",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Иван-чай облепиховый",
+                "time": "30",
+                "temperature": "",
+                "glass": "Стекло",
+                "rating": "5",
+                "description": "",
+                "price": "",
+                "tags": "Вечерний",
+                "inStock": "TRUE"
+            }
+        ],
+        "totalAmount": 10,
+        "inStockAmount": 10,
+        "outOfStockAmount": 0
+    },
+    "Мате": {
+        "name": "Мате",
+        "teaList": [
+            {
+                "name": "Meta mate 23",
+                "time": "0",
+                "temperature": "50-60",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "",
+                "price": "10",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Playadito(con palo)",
+                "time": "0",
+                "temperature": "70",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "Спокойный запах и вкус. При заварке 30гр появляется кислота во вкусе",
+                "price": "10",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Pajarito Elaborada(Парагвай)",
+                "time": "0",
+                "temperature": "70",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "Дымный, табачный запах и горьковатый вкус, при заварке 30гр во вкусе сильная кислость и на послевкусии горечь",
+                "price": "10",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "La merced barbacua",
+                "time": "0",
+                "temperature": "65",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "Мягкий, сбалансированный, с ореховыми нотками",
+                "price": "3.4",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Reserva del che(despalada)",
+                "time": "0",
+                "temperature": "65",
+                "glass": "Глина",
+                "rating": "5",
+                "description": "",
+                "price": "10",
+                "tags": "",
+                "inStock": "TRUE"
+            },
+            {
+                "name": "Pipore Despalada",
+                "time": "0",
+                "temperature": "65",
+                "glass": "",
+                "rating": "",
+                "description": "",
+                "price": "",
+                "tags": "",
+                "inStock": "TRUE"
+            }
+        ],
+        "totalAmount": 6,
+        "inStockAmount": 6,
+        "outOfStockAmount": 0
+    },
+    "Черный": {
+        "name": "Черный",
+        "teaList": [
+            {
+                "name": "Черный",
+                "time": "",
+                "temperature": "",
+                "glass": "",
+                "rating": "",
+                "description": "",
+                "price": "",
+                "tags": "",
+                "inStock": "FALSE"
+            }
+        ],
+        "totalAmount": 1,
+        "inStockAmount": 0,
+        "outOfStockAmount": 1
+    }
+}
